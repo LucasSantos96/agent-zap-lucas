@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="/script/index.js" defer></script>
+
+    <title>Agente ZAP</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <!-- Título da aplicação -->
+        <div class="titles">
+            <h1>Agente ZAP v1.0</h1>
+
+            <p>
+                Agente para grupos de WhatsApp com finalidade de
+                automatizar tarefas e melhorar a comunicação.
+            </p>
+        </div>
+
+        <!-- Área do QR Code -->
+        <div class="qr-container">
+
+            <section class="qr-section">
+
+                <!-- QR Code -->
+                <div class="qr-code">
+                    <h2>Conectar WhatsApp</h2>
+
+                    <div id="qrcode">
+                        QR Code aparecerá aqui
+                    </div>
+
+                    <button id="connect-btn">Conectar</button>
+                </div>
+
+                <!-- Seleção dos grupos -->
+                <div class="groups-container">
+                    <h2>Grupos monitorados</h2>
+
+                    <select id="groups">
+                        <option value="">Selecione um grupo</option>
+                    </select>
+                </div>
+
+            </section>
+
+        </div>
+        </div>
+
+
+
+
+
+        <!-- Resultado das análises -->
+        <div class="results-container">
+            <h2>Monitoramento</h2>
+
+            <pre id="results"></pre>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

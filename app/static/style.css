@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f5;
+    color: #18181b;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.titles {
+    margin-bottom: 30px;
+}
+
+.titles h1 {
+    margin-bottom: 8px;
+}
+
+.titles p {
+    color: #52525b;
+}
+
+/* Card principal */
+.qr-container,
+.results-container {
+    background: white;
+    border: 1px solid #e4e4e7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* QR + Grupos */
+.qr-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+/* Área do QR */
+.qr-code {
+    text-align: center;
+}
+
+.qr-code h2,
+.groups-container h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* QR Code */
+#qrcode {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px dashed #d4d4d8;
+    border-radius: 8px;
+
+    color: #71717a;
+}
+
+/* Botão */
+#connect-btn {
+    margin-top: 15px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#connect-btn:hover {
+    background: #4338ca;
+}
+
+/* Grupos */
+.groups-container {
+    width: 250px;
+}
+
+#groups {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #d4d4d8;
+    border-radius: 6px;
+
+    background: white;
+}
+
+/* Resultados */
+.results-container {
+    text-align: center;
+}
+
+.results-container h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#results {
+    min-height: 200px;
+    padding: 15px;
+
+    background: #18181b;
+    color: #e4e4e7;
+
+    border-radius: 6px;
+    overflow-x: auto;
+}
