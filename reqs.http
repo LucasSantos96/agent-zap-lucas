@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8001
+
+### Testar a API FastAPI
+GET {{baseUrl}}/wuzapi/test
+
+### Cria usuário no Wuzapi
+POST {{baseUrl}}/wuzapi/user/create
+
+### Conecta o usuário no Wuzapi
+
+POST {{baseUrl}}/wuzapi/connect
+
+
+### chama o qr code do usuário conectado no Wuzapi
+GET {{baseUrl}}/wuzapi/qrcode
+
+
+### Desconecta o usuário no Wuzapi
+POST {{baseUrl}}/wuzapi/disconnect
+
+
+#### ### chama o status do usuário conectado no Wuzapi
+GET {{baseUrl}}/wuzapi/status
+
+### chama os grupos do usuário conectado no Wuzapi
+GET {{baseUrl}}/wuzapi/group

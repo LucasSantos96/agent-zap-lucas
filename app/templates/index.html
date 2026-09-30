@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
-    <script src="/script/index.js" defer></script>
+    <script src="/script/index.js" defer type="module"></script>
 
     <title>Agente ZAP</title>
 </head>
@@ -31,28 +31,38 @@
 
                 <!-- QR Code -->
                 <div class="qr-code">
-                    <h2>Conectar WhatsApp</h2>
+                    <div class="qr-header">
+                        <h2>Conectar WhatsApp</h2>
+                        <span id="status" class="status">Desconhecido</span>
+                    </div>
 
                     <div id="qrcode">
                         QR Code aparecerá aqui
                     </div>
 
-                    <button id="connect-btn">Conectar</button>
+                    <div>
+                        <button id="connect-btn">Conectar</button>
+                        
+                        <button id="disconnect-btn">Desconectar</button>
+
+                    
+                    </div>
                 </div>
 
                 <!-- Seleção dos grupos -->
                 <div class="groups-container">
                     <h2>Grupos monitorados</h2>
 
-                    <select id="groups">
-                        <option value="">Selecione um grupo</option>
-                    </select>
+                    <!-- Cada grupo vira uma opção com caixinha de seleção -->
+                    <div id="groups" class="groups-list">
+                        Conecte o WhatsApp para listar os grupos
+                    </div>
                 </div>
 
             </section>
 
         </div>
-        </div>
+    
 
 
 
