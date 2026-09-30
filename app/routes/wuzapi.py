@@ -9,8 +9,8 @@ load_dotenv()
 wuzapi_url = os.getenv("WUZAPI_URL", "http://localhost:8088")  # URL do WUZAPI
 token_admin = str(os.getenv("WUZAPI_ADMIN_TOKEN"))  # Token de autenticação do WUZAPI
 token_user = str(os.getenv("WUZAPI_USER_TOKEN"))  # Token de autenticação do WUZAPI
-print("Wuzapi-token", token_admin)
-print("Wuzapi-token", token_user)
+#print("Wuzapi-token", token_admin)
+#print("Wuzapi-token", token_user)
 
 router = APIRouter(prefix="/wuzapi", tags=["Wuzapi"])
 

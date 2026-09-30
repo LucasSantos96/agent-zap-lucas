@@ -1,7 +1,9 @@
+alembic==1.20.0
 annotated-doc==0.0.5
 annotated-types==0.8.0
 anthropic==1.2.0
 anyio==4.14.2
+asyncpg==0.31.0
 av==18.1.0
 blinker==1.9.0
 certifi==2026.6.17
@@ -16,6 +18,7 @@ filelock==3.32.4
 Flask==3.1.3
 flatbuffers==25.12.19
 fsspec==2026.7.0
+greenlet==3.5.6
 h11==0.16.0
 hf-xet==1.6.0
 httpcore==1.0.9
@@ -28,6 +31,7 @@ instaloader==4.15.2
 itsdangerous==2.2.0
 Jinja2==3.1.6
 jiter==0.16.0
+Mako==1.4.3
 MarkupSafe==3.0.3
 numpy==2.5.2
 onnxruntime==1.29.0
@@ -42,6 +46,7 @@ requests==2.34.2
 ruff==0.16.9
 setuptools==84.0.0
 sniffio==1.3.1
+SQLAlchemy==2.1.1
 starlette==1.7.0
 tokenizers==0.23.1
 tqdm==4.70.0

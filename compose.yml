@@ -11,5 +11,24 @@ services:
     volumes:
       - wuzapi-agent:/app/dbdata
 
+  postgres:
+    container_name: db-agent
+    image: postgres:17-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db_agent
+    ports:
+      - "5445:5432"
+    volumes:
+      - db-agent-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
 volumes:
+  db-agent-data:
   wuzapi-agent:
